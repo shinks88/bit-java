@@ -6,8 +6,44 @@ public class TypeEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		intLongTest();
-		floatDoubleTest();
+//		intLongTest();
+	//	floatDoubleTest();
+	//	booleanEx();
+		charEx();
+	}
+	
+	// char 연습
+	public static void charEx() {
+		// 2바이트(부호 없음)
+		// 유니코드 한 글자의 수치화된 코드
+		// 반드시 ' <- char
+		// "" <- String
+		char ch1 = 'A';
+		char ch2 = '한';
+		
+		System.out.println("ch1= "+ch1);
+		System.out.println("ch2= "+ch2);
+		
+		System.out.println(ch1+ch2);
+	}
+	
+	// boolean 연습
+	public static void booleanEx() {
+		// 논리값 true or false
+		// 주로 비교 연산, 논리연산 결과를 반환
+		// 흐름 제어, 반복에서 흐름을 제어할 때 이값을 사용한다
+		boolean b1 = true;
+		boolean b2 = false;
+		
+		System.out.println(b1);
+		System.out.println(b2);
+		
+		int v1 = 3;
+		int v2 = 5;
+		
+		boolean result = v1 < v2;
+		// 비교 연산, 논리 연산의 결과로 반환
+		System.out.println("v1 < v2 ? "+ result);
 	}
 	
 	// 실수형 연습
@@ -30,6 +66,8 @@ public class TypeEx {
 		
 		// 실수 자료형의 처리는 정밀도가 떨어진다(표현 범위를 넓힘)
 		System.out.println(0.1*3);
+		// 금융권 같은 정밀도를 요구하는 개발에는 float, double
+		// 사용은 유의해야한다
 	}
 	
 	// 정수형 연습
