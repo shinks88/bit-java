@@ -24,7 +24,7 @@ public class VarEx {
 			//	변수의 경우 선언시 지정한 데이터 타입 이외ㅢ 데이터는 넣을 수 없다
 //			myAge = 12345678012234567890; // error
 			
-			//whghldhk qusrud
+			//  조회와 변경
 			System.out.println("myAge의 내용:"+ myAge);
 			myAge = myAge + 1;
 			System.out.println("변경된 myAge의 내용:"+ myAge);
