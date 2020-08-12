@@ -10,8 +10,19 @@ public class ConsoleEx {
 	public static void main(String[] args) {
 
 //		consoleOutput();
-		consoleInput();
+//		consoleInput();
+		nameOut();
 	}
+	public static void nameOut() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("이름을 입력하세요");
+		String name = scanner.next();
+		System.out.println("나이를 입력하세요");
+		int age = scanner.nextInt();
+		System.out.printf("당신의 이름은 %s, 나이는 %d입니다.%n", name, age);
+		System.out.println("당신의 이름은 " + name + ", 나이는 "+ age + "입니다.");
+	}
+	
 	// 콘솔 입력(System.in)
 	// Scanner 클래스를 이용하면 다양한 입력 소스로부터
 	// 데이터를 입력 받을 수 있다

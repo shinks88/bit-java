@@ -27,7 +27,11 @@ public class StringEx {
 		res = String.format("파이상수는 %.3f입니다.", Math.PI);
 		System.out.println(res);
 				
+		String fmt2 = "%d개의 %s중에서 %d개를 먹었따.%n";
+		System.out.printf(fmt2, total, fruit, eat);
 		
+		String fmt3 = String.format("%d개의 %s중에서 %d개를 먹었따", total, fruit, eat);
+		System.out.println(fmt3);
 	}
 	
 	public static void stringBasic() {
@@ -48,5 +52,5 @@ public class StringEx {
 		System.out.println(str.equals(str2));
 		System.out.println(str2.contentEquals(str3));
 	}
-	
+
 }

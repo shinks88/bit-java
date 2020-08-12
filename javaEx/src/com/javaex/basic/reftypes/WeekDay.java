@@ -6,6 +6,7 @@ package com.javaex.basic.reftypes;
 // enum 활용
 // 	1. 코드 가독성 높아진다
 //	2. 오류 가능성을 낮출 수 있다
+
 public enum WeekDay {
 	// 열거 상수 : 모두 대문자로
 	SUNDAY,

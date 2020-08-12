@@ -17,8 +17,17 @@ public class ConditionalEx {
 //		forEx();
 //		continueEx();
 //		breakEx();
-		randomEx();
+//		randomEx();
+		randomEx2();
 	}
+	public static void randomEx2() {
+		
+		for (int i=1; i<=6; i++) {
+			int lotto = (int)(Math.random()*45)+1;
+			System.out.print(lotto + " ");
+		}
+	}
+	
 	public static void randomEx() {
 		// 복수변의 랜덤(1~6)을 뽑아서 합산
 		int rollCnt = 6; // 횟수
