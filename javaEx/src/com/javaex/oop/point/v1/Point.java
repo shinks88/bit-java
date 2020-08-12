@@ -6,6 +6,18 @@ public class Point {
 	private int x;
 	private int y;
 	
+	Point(){}
+	
+	Point(int a, int b){
+		this.x = a;
+		this.y = b;
+	}
+	
+	Point(int a){
+		this.x = a;
+		this.y = 0;
+	}
+	
 	//	getters/setters
 	public int getX() {
 		return x;
