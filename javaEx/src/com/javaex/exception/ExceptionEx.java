@@ -23,7 +23,7 @@ public class ExceptionEx {
 //		} catch (IOException e) {
 //			System.err.println("예외 메시지: " + e.getMessage());
 
-		} catch (CustomArithmeticException e) {
+		} catch (CustomArithmeticException e) { //	순서 중요
 			// 본 예외는 RuntimeException의 자손이므로
 			// RuntimeException보다 위에서 catch 해줘야함
 			System.err.println("사용자 정의 예외 메시지:" + e.getMessage());
