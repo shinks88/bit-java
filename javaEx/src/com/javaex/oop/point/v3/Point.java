@@ -1,14 +1,14 @@
 package com.javaex.oop.point.v3;
 
 
-// v3
-// �޼��� �����ε�
+//v3
+//메서드 오버로딩
 public class Point {
 
 	private int x, y;
 
-	// ����� ���� �����ڰ� ���� ���
-	// JVM�� �⺻ �����ڸ� ������ �ʴ´�
+	// 사용자 정의 생서자가 있을 경우
+	// JVM은 기본 생성자를 만들지 않는다
 	public Point() {}
 	
 	public Point(int x, int y) {
@@ -32,20 +32,20 @@ public class Point {
 		this.y = y;
 	}
 	
-	// �޼���
+	// 메서드
 	public void draw() {
-		System.out.printf("��[x=%d, y=%d]�� �׷Ƚ��ϴ�. %n",x, y);
+		System.out.printf("점[x=%d, y=%d]을 그렸습니다. %n",x, y);
 	}
 	
-	// �޼��� �����ε�
-	// ���� ����Ÿ�԰� ���� �̸��� ��������
-	// �Ű������� ����, ����, ������ �ٸ� �޼���
+	// 메서드 오버로딩
+	// 같은 리턴타입과 같은 이름을 가졌지만
+	// 매개변수의 종류, 갯수, 순서만 다른 메서드
 	public void draw(boolean show) {
-		// show : true -> �׷Ƚ��ϴ�.
-		// show : false -> �������ϴ�.
-		String message = show ? "�׷Ƚ��ϴ�." : "�������ϴ�.";
-		// TODO : -> if�� �������� �غ���
+		// show : true -> 그렸습니다.
+		// show : false -> 지웠습니다.
+		String message = show ? "그렸습니다." : "지웠습니다.";
+		// TODO : -> if문 버전으로 해보기
 		
-		System.out.printf("��[x=%d, y=%d]�� %s %n",x, y, message);
+		System.out.printf("점[x=%d, y=%d]을 %s %n",x, y, message);
 	}
 }
