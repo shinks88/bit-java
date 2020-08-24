@@ -56,6 +56,10 @@ public class HashSetEx {
 		
 		//	삭제 : 인덱스 없으므로 객체 삭제만 가능
 		hs.remove("C++");
+		System.out.println("SET: " + hs);
+		
+		hs.remove("C++");
+		System.out.println("SET: " + hs); //	아무일도 일어나지 않음. 이미 없음
 		
 		
 		
