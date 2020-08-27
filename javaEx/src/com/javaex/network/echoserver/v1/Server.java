@@ -32,6 +32,7 @@ public class Server {
 			Socket socket = serverSocket.accept();
 			//	접속 후 처리 : 클라이언트 정보 확인
 			
+			// 	이 아래 코드들은 서버가 계속 실행해야하는 코드임! 서버는 항상 프로세스가 돌고있어야함
 			InetSocketAddress client = 
 					(InetSocketAddress)socket.getRemoteSocketAddress();
 			System.out.println("[클라이언트가 연결되었습니다.]");
